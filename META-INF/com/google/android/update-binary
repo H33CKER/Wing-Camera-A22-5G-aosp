@@ -1,0 +1,55 @@
+#!/sbin/sh
+
+#################
+# Initialization
+#################
+
+umask 022
+
+# echo before loading util_functions
+ui_print() { echo "$1"; }
+
+require_new_magisk() {
+  ui_print "*******************************"
+  ui_print " Please install Magisk v20.4+! "
+  ui_print "*******************************"
+  exit 1
+}
+
+#########################
+# Load util_functions.sh
+#########################
+
+OUTFD=$2
+ZIPFILE=$3
+
+mount /data 2>/dev/null
+
+[ -f /data/adb/magisk/util_functions.sh ] || require_new_magisk
+. /data/adb/magisk/util_functions.sh
+[ $MAGISK_VER_CODE -lt 20400 ] && require_new_magisk
+
+ui_print "---------------------------------------------"
+ui_print "-           Wing Camera for AOSP            -"
+ui_print "---------------------------------------------"
+ui_print "-               Smiley_9000                 -"
+ui_print "---------------------------------------------"
+ui_print "- Android 14+                               -"
+ui_print "- Supported Only,                           -"
+ui_print "-  ¬ Samsung Galaxy A05 [N28]               -"
+ui_print "-  ¬ Samsung Galaxy M05 [N28]               -"
+ui_print "-  ¬ Samsung Galaxy F05 [N28]               -"
+ui_print "---------------------------------------------"
+ui_print "- Based on SM-A055F Stock Camera            -"
+ui_print "---------------------------------------------"
+ui_print "  "
+ui_print "---------------------------------------------"
+ui_print "- Powerded by Ayra Meida Provider           -"
+ui_print "---------------------------------------------"
+ui_print "- Installing                                -"
+ui_print "---------------------------------------------"
+install_module
+ui_print "---------------------------------------------"
+ui_print "-Done                                       -"
+ui_print "---------------------------------------------"
+exit 0

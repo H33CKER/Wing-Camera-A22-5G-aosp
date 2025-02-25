@@ -1,0 +1,10 @@
+vendor.camera.aux.packagelist=com.sec.android.app.camera,app.grapheneos.camera.play,com.shamim.cam
+camera.aux.packagelist=com.sec.android.app.camera,app.grapheneos.camera.play,com.shamim.cam
+persist.vendor.camera.expose.aux=1
+persist.camera.expose.aux=1
+ro.jdm_dev.manufacturer=samsung
+ro.jdm_dev.model=SM-A226B
+ro.jdm_dev.name=a22xx
+ro.jdm_dev.device=a226x
+ro.csc.country_code=UK
+ro.csc.countryiso_code=BTB
