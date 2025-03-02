@@ -1,6 +1,6 @@
-id=a05m-wing_camera_jdm
+id=A226B-wing_camera_jdm
 name=Galaxy A22 5G Samsung Camera
 version=1.0
 versionCode=1
-author=Eray R. & H3CKER
-description=Galaxy A22 5G Stock Camera port based on WingCamera by Smiley_9000
+author=Eray R. & H3CKER (ported from A05 - Smiley9000)
+description=Galaxy A22 5G Stock Camera port based on WingCamera
